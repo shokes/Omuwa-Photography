@@ -12,6 +12,7 @@ body {
   background-color: var(--background);
   font-family: 'Playfair Display', serif;
   color: var(--text-color);
+  min-height: 100vh;
 }
 
 .nav {
@@ -21,7 +22,7 @@ body {
 }
 
 .container {
-  max-width: 53rem;
+  max-width: 60rem;
   margin: 3rem auto 0 auto;
 }
 
@@ -61,27 +62,12 @@ body {
   text-align: center;
 }
 
-.about-photo {
-  width: 25%;
-  height: 25%;
-  border: 17px solid #fff;
-}
-
-.about-box {
-  display: flex;
-  gap: 10rem;
-  padding: 5rem 0 1rem 0;
-}
-
-.about-box p {
+h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
   letter-spacing: 1px;
   word-spacing: 1px;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
 }
 
 .contact {
@@ -98,7 +84,8 @@ h3 {
   text-decoration: none;
   border-bottom: 1px solid var(--text-color);
   color: var(--text-color);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .contact-head {
@@ -110,8 +97,90 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .contact-container {
-  padding: 8rem 0 1rem 0;
+  padding: 8rem 0 9rem 0;
+  height: 79vh;
+}
+
+/* .section-footer {
+  height: 100%;
+} */
+
+.footer-nav-lists {
+  text-decoration: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.footer-nav-list {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-bottom: 3rem;
+}
+
+.rights {
+  padding-bottom: 3rem;
+}
+
+.about-box {
+  display: flex;
+  gap: 10rem;
+  padding: 8rem 0 9rem 0;
+  height: 79vh;
+  align-items: center;
+}
+
+.about-photo {
+  height: 104%;
+  width: 50%;
+  border: 9px solid #fff;
+}
+
+p {
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.works {
+  padding: 8rem 0 9rem 0;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5rem;
+  row-gap: 2rem;
+}
+
+.project-image {
+  height: 22rem;
+  width: 16.67rem;
+  transition: all 0.9s;
+  cursor: pointer;
+}
+
+.project-image:hover {
+  transform: scale(0.8);
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  word-spacing: 2px;
 }
