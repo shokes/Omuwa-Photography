@@ -1,5 +1,5 @@
 import Navbar from '../Components/Navbar';
-
+import GoToTop from '../GoToTop';
 import Footer from '../Components/Footer';
 import { Slide, Zoom } from 'react-awesome-reveal';
 
@@ -13,10 +13,10 @@ const About = function () {
             <Slide direction='up'>
               <h3>ABOUT ME</h3>
             </Slide>
-            <Slide direction='up'>
+            <Slide direction='up' className='about-para'>
               <p className='about-me-first'>
-                I started my photography journey in 2017, using my Iphone 7 as
-                my photography tool, I recently won an Apple Photography
+                I started my photography journey in 2017, using my Iphone 7 plus
+                as my photography tool, I recently won an Apple Photography
                 competition with winners being honored with Apple's exclusive
                 CAMERA EXPERIENCE OFFICER [CEO] badge.
               </p>
@@ -29,7 +29,7 @@ const About = function () {
               </p>
             </Slide>
           </div>
-          <Zoom delay={300} duration={100}>
+          <Zoom delay={400} duration={200}>
             <img
               src='https://images.unsplash.com/photo-1562583489-bf23ec64651d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZmVtYWxlJTIwcGhvdG9ncmFwaGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
               className='about-photo'
@@ -40,6 +40,7 @@ const About = function () {
       </div>
 
       <Footer />
+      <GoToTop />
     </section>
   );
 };

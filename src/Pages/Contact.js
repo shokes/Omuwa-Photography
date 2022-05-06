@@ -1,6 +1,7 @@
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { Slide } from 'react-awesome-reveal';
+import GoToTop from '../GoToTop';
 const Contact = function () {
   return (
     <section className='container'>
@@ -14,15 +15,15 @@ const Contact = function () {
         </Slide>
 
         <div className='contact-details'>
-          <Slide direction='up' duration={600}>
+          <Slide direction='up' delay={200} duration={300}>
             <div>
               <div className='contact-head'>WhatsApp/Call</div>
-              <a className='contact-info' href='tel:080-835-945-05'>
-                08083594505
+              <a className='contact-info' href='tel:+2348083594505'>
+                +2348083594505
               </a>
             </div>
           </Slide>
-          <Slide direction='up' duration={1100}>
+          <Slide direction='up' delay={400} duration={300}>
             <div>
               <div className='contact-head'>Email</div>
               <a className='contact-info' href='oyatioshoke@yahoo.com'>
@@ -30,7 +31,7 @@ const Contact = function () {
               </a>
             </div>
           </Slide>
-          <Slide direction='up' duration={1600}>
+          <Slide direction='up' delay={600} duration={300}>
             <div>
               <div className='contact-head'>Twitter</div>
               <a className='contact-info' href='https://twitter.com/Airshokes'>
@@ -41,6 +42,7 @@ const Contact = function () {
         </div>
       </div>
       <Footer />
+      <GoToTop />
     </section>
   );
 };

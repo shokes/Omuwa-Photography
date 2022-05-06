@@ -1,10 +1,8 @@
-//import 'animate.css';
 import { Slide } from 'react-awesome-reveal';
 
 const Hero = function () {
   return (
     <section className='container'>
-      {/* <div></div> */}
       <Slide direction='up' triggerOnce duration={200}>
         <div className='main-hero-text'>
           <p>Omuwa</p>

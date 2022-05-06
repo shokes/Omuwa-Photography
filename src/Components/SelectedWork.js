@@ -2,6 +2,8 @@ import projects from '../data';
 import { Link } from 'react-router-dom';
 import { Slide } from 'react-awesome-reveal';
 
+import GoToTop from '../GoToTop';
+
 const SelectedWork = function () {
   return (
     <section className='container'>
@@ -9,10 +11,13 @@ const SelectedWork = function () {
       {projects.map((project) => {
         const { year, title, id } = project;
         return (
-          <Slide direction='up' triggerOnce>
-            <div key={id} className='selected-works-flex'>
+          <Slide key={id} cascade direction='up' triggerOnce>
+            <div className='selected-works-flex'>
               <div>{year}</div>
-              <div className='selected-title'>{title}</div>
+
+              <Link to={`/work/${id}`} className='selected-title'>
+                {title}
+              </Link>
             </div>
           </Slide>
         );
@@ -20,6 +25,7 @@ const SelectedWork = function () {
       <Link to='/work' className='all-projects'>
         ALL PROJECTS
       </Link>
+      <GoToTop />
     </section>
   );
 };
