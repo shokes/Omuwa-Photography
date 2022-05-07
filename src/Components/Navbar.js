@@ -10,13 +10,13 @@ const Navbar = function () {
       <div>
         <ul className='main-nav-lists'>
           <Link to='/work' className='nav-list'>
-            WORK
+            work
           </Link>
           <Link to='/about' className='nav-list'>
-            ABOUT
+            about
           </Link>
           <Link to='/contact' className='nav-list'>
-            CONTACT
+            contact
           </Link>
         </ul>
       </div>

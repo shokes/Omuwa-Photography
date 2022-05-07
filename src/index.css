@@ -18,7 +18,7 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 .container {
@@ -37,6 +37,7 @@ body {
   color: var(--text-color);
   font-size: 0.9rem;
   font-weight: 500;
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
@@ -339,7 +340,7 @@ h5 {
 
 @media (max-width: 36em) {
   .container {
-    max-width: 29.4rem;
+    max-width: 28.5rem;
   }
 
   .main-nav-lists {
