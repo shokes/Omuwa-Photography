@@ -27,9 +27,9 @@ body {
 }
 
 .main-nav-lists {
-  text-decoration: none;
-  display: flex;
+  display: grid;
   gap: 1.8rem;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .nav-list {
@@ -177,10 +177,13 @@ h5 {
 }
 
 .selected-works-flex {
-  display: flex;
-  gap: 5rem;
+  display: grid;
+  gap: 2rem;
+
   align-items: center;
   margin-bottom: 5rem;
+
+  grid-template-columns: 6fr 94fr;
 }
 
 .selected-title {
@@ -277,7 +280,7 @@ h5 {
   }
 
   html {
-    font-size: 75.25%;
+    font-size: 78.25%;
   }
 
   .work-grid {
@@ -336,7 +339,11 @@ h5 {
 
 @media (max-width: 36em) {
   .container {
-    max-width: 26rem;
+    max-width: 30rem;
+  }
+
+  .main-nav-lists {
+    gap: 0;
   }
 
   .main-hero-text {
