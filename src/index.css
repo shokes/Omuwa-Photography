@@ -266,3 +266,89 @@ h5 {
 .about-para p {
   line-height: 1.4;
 }
+
+/* media queries */
+
+/* below 1000px */
+
+@media (max-width: 63em) {
+  .container {
+    max-width: 50rem;
+  }
+
+  html {
+    font-size: 75.25%;
+  }
+
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-details {
+    display: grid;
+    gap: 0;
+  }
+
+  .single-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* below 825px */
+
+@media (max-width: 52em) {
+  .container {
+    max-width: 40rem;
+  }
+}
+
+/* below 700px */
+
+@media (max-width: 44em) {
+  .container {
+    max-width: 35rem;
+  }
+
+  .about-box {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo-main {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+  .project-image {
+    height: 30rem;
+    width: 23.61rem;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* below 586px */
+
+@media (max-width: 36em) {
+  .container {
+    max-width: 26rem;
+  }
+
+  .main-hero-text {
+    font-size: 3.5rem;
+  }
+  .quote {
+    font-size: 1rem;
+  }
+  .selected-title {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 2.1rem;
+  }
+}

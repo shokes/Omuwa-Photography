@@ -29,7 +29,7 @@ const About = function () {
               </p>
             </Slide>
           </div>
-          <Zoom delay={400} duration={200}>
+          <Zoom delay={400} duration={200} className='about-photo-main'>
             <img
               src='https://images.unsplash.com/photo-1562583489-bf23ec64651d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZmVtYWxlJTIwcGhvdG9ncmFwaGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
               className='about-photo'
