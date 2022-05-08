@@ -8,11 +8,14 @@
   --text-color: #2d334a;
   --background: #fcc2d7;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--background);
   font-family: 'Playfair Display', serif;
   color: var(--text-color);
-  min-height: 100vh;
 }
 
 .nav {
@@ -120,8 +123,8 @@ h3 {
 .about-box {
   display: flex;
   gap: 10rem;
-  padding: 8rem 0 9rem 0;
-  height: 79vh;
+  padding: 8rem 0 7.95rem 0;
+  /* height: 79vh; */
   align-items: center;
 }
 
