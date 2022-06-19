@@ -7,7 +7,10 @@ import GetInTouch from '../Components/GetInTouch';
 const Home = function () {
   return (
     <>
-      <Navbar />
+      <div className='container'>
+        <Navbar />
+      </div>
+
       <Hero />
       <SelectedWork />
       <GetInTouch />

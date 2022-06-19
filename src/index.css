@@ -283,7 +283,7 @@ h5 {
 
 @media (max-width: 63em) {
   .container {
-    max-width: 50rem;
+    max-width: 90%;
   }
 
   html {
@@ -307,16 +307,22 @@ h5 {
 /* below 825px */
 
 @media (max-width: 52em) {
-  .container {
+  /* .container {
     max-width: 40rem;
-  }
+  } */
 }
 
 /* below 700px */
 
 @media (max-width: 44em) {
-  .container {
-    max-width: 35rem;
+  .main-project-image {
+    height: 32rem;
+    width: 24rem;
+  }
+
+  .sample2 {
+    height: 25rem;
+    width: 22rem;
   }
 
   .about-box {
@@ -345,9 +351,9 @@ h5 {
 /* below 586px */
 
 @media (max-width: 36em) {
-  .container {
+  /* .container {
     max-width: 28.5rem;
-  }
+  } */
 
   .main-nav-lists {
     gap: 0;

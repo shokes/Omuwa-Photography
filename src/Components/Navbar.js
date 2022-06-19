@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = function () {
   return (
-    <nav className='container nav'>
+    <nav className='nav'>
       <Link to='/' className='logo'>
         Omuwa
       </Link>
